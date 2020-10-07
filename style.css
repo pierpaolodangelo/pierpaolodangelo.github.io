@@ -1,0 +1,44 @@
+body {
+    background-color: #0b0b31;
+}
+.yellow {
+    color: yellow;
+}
+
+header {
+    font-family: "Roboto Mono", monospace;
+    border-bottom: 1px solid yellow;
+   
+}
+h1 {
+    color: white;
+    flex-grow: 1;
+    min-width: 20%;
+    max-width: 30%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: baseline;
+    min-width: 60%;
+}
+nav ul {
+    justify-content: space-between;
+    display: flex;
+    flex-grow: 1;
+    max-width: 50%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 1rem;
+}
