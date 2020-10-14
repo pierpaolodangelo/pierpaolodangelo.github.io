@@ -20,7 +20,7 @@ function populateData(json) {
                         <td>${json[i].dimessi_guariti}</td>
                         <td>${json[i].deceduti}</td>
                         <td>${json[i].totale_casi}</td>
-                        <td>${json[i].variazione_totale_positivi}</td>
+                        <td>${json[i].nuovi_positivi}</td>
                     </tr> `
         var table = $('#table-body');
         table.append(row);
