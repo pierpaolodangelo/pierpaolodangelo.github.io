@@ -1,7 +1,6 @@
 function loadData() {
     const request = new XMLHttpRequest();
-    request.open("get", /*"https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni-latest.json"*/
-        "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni.json");
+    request.open("get", "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni.json");
     request.onload = () => {
         try {
             const json = JSON.parse(request.responseText);
@@ -16,10 +15,10 @@ function loadData() {
 }
 
 function populateDataByDate(json) {
-    console.log(json);
+    json.sort((a, b) => b.data.localeCompare(a.data));
     var date = document.getElementById("date-input").value;
+    date = !date ? json[0].data : date;
     var newData = json.filter(el => el.data.startsWith(date));
-    console.log(newData);
     var table = $('#table-body');
     table.empty();
     newData.forEach(element => {

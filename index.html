@@ -19,7 +19,7 @@
     <title>Home</title>
   </head>
 
-  <body>
+  <body onload="loadData()">
     <header>
       <nav>
         <h1><span class="yellow">Covid</span>Tracker</h1>
@@ -38,9 +38,14 @@
       </nav>
     </header>
     <div class="data-form">
-        <label class="input-label">Data:</label>
+      <label class="input-label">Data:</label>
       <input id="date-input" type="date" />
-      <input id="submit-button" type="button" onclick="loadData()" value="Cerca">
+      <input
+        id="submit-button"
+        type="button"
+        onclick="loadData()"
+        value="Cerca"
+      />
     </div>
     <div class="container">
       <div class="table-responsive">
