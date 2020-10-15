@@ -1,82 +1,105 @@
 body {
-    background-color: #0b0b31;
-    font-family: "Roboto Mono", monospace;
-    color: white;
+  background-color: #f5fffa;
+  font-family: "Roboto Mono", monospace;
+  color: black;
 }
 
 .yellow {
-    color: yellow;
+  color: red;
 }
 
 @media only screen and (min-width: 800px) {
-    nav {
-        flex-grow: 1;
-        display: flex;
-        align-items: baseline;
-        min-width: 60%;
-    }
+  nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: baseline;
+    min-width: 60%;
+  }
 
-    nav ul {
-        max-width: 50%;
-        margin-right: 10%;
-    }
+  nav ul {
+    max-width: 50%;
+    margin-right: 10%;
+  }
 }
 
 header {
-    font-family: "Roboto Mono", monospace;
-    border-bottom: 1px solid yellow;
-
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 2px solid red;
 }
 
 h1 {
-    color: white;
-    flex-grow: 1;
-    min-width: 20%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 2rem;
+  flex-grow: 1;
+  min-width: 20%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 2rem;
 }
 
 nav ul {
-    justify-content: space-between;
-    display: flex;
-    flex-grow: 1;
-    margin-left: 2%;
-    margin-right: 2%;
+  justify-content: space-between;
+  display: flex;
+  flex-grow: 1;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 nav ul a {
-    color: white;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 nav li {
-    list-style-type: none;
-    font-size: 1rem;
+  list-style-type: none;
+  font-size: 1rem;
 }
 
 th,
 td {
-    text-align: center;
-
+  text-align: center;
 }
 
 tr {
-    border-bottom: 1px solid yellow;
-    border-collapse: collapse;
+  border-bottom: 1px solid red;
+  border-collapse: collapse;
 }
 
 tr:hover {
-    background-color: #06061c;
+  background-color: #e6e6e6;
 }
 
 table {
-    flex-grow: 1;
-    border-bottom: 1px solid yellow;
+  flex-grow: 1;
+  border-bottom: 2px solid red;
 }
 
 .table-responsive {
-    display: flex;
-    overflow-x: auto;
-
+  display: flex;
+  overflow-x: auto;
+}
+.data-form {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-right: 18px;
+  padding: 10px 0px 10px 0px;
+}
+#date-input {
+  background-color: #f5fffa;
+}
+#submit-button {
+  transition-duration: 0.4s;
+  margin-left: 18px;
+  background-color: #f5fffa;
+  border: 2px solid black;
+}
+#submit-button:hover {
+  background-color: black;
+  color: white;
+}
+input[type="date"] {
+  border: none;
+  text-align: right;
+}
+.input-label {
+  font-size: 0.9rem;
 }
