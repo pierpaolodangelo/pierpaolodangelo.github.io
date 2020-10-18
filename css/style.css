@@ -103,3 +103,30 @@ input[type="date"] {
 .input-label {
   font-size: 0.9rem;
 }
+path {
+    fill: grey;
+}
+
+path:hover{
+    fill: #9B2242 ;
+}
+svg {
+    height: 50%;
+    width: auto;
+    
+}
+.region-container{
+    display: flex;
+    align-content: space-between;
+}
+.map {
+    min-width: 40%;
+    display: flex;
+    justify-content: flex-end;
+ 
+    
+}
+.data{
+    min-width: 60%;
+    
+}

@@ -31,4 +31,9 @@ function populateDataByDate(json) {
         </tr>`
         table.append(row);
     });
+    
+function displayName(name) {
+    document.getElementById("nome-regione").firstChild.data=name;
+}
+
 }
