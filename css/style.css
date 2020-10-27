@@ -1,11 +1,11 @@
 body {
-  background-color: #444F57;
+  background-color: #17202a;
   font-family: "Roboto Mono", monospace;
-  color: black;
+  color: white;
 }
 
 .yellow {
-  color: red;
+  color: #3498db;
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,8 +20,6 @@ body {
     max-width: 50%;
     margin-right: 10%;
   }
-}
-@media only screen and (min-width: 500px) {
   .region-container {
     flex-direction: row !important;
   }
@@ -30,12 +28,17 @@ body {
   }
   .data {
     min-width: 60%;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .data-box {
+    width: 35% !important;
   }
 }
 
 header {
   font-family: "Roboto Mono", monospace;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #3498db;
 }
 
 h1 {
@@ -55,7 +58,7 @@ nav ul {
 }
 
 nav ul a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -70,17 +73,17 @@ td {
 }
 
 tr {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #3498db;
   border-collapse: collapse;
 }
 
 tr:hover {
-  background-color: #e6e6e6;
+  background-color: #090c10;
 }
 
 table {
   flex-grow: 1;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #3498db;
 }
 
 .table-responsive {
@@ -115,11 +118,11 @@ input[type="date"] {
   font-size: 0.9rem;
 }
 path {
-  fill: grey;
+  fill: #454d55;
 }
 
 path:hover {
-  fill: #9b2242;
+  fill: #3498db;
 }
 svg {
   width: 100%;
@@ -143,25 +146,24 @@ svg {
 }
 .data {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
 .data-box {
-  width: 80%;
+  margin: 0 0 4px 4px;
+  width: 60%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
   border: 1px solid black;
   box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
-.box-title{
+.box-title {
   height: 25px;
-  
+  background-color: #3498db;
 }
-.box-title p{
+.box-title p {
   display: inline;
 }
-
-
