@@ -167,3 +167,7 @@ svg {
 .box-title p {
   display: inline;
 }
+
+.box-value{
+  height: 50px;
+}

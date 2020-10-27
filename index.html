@@ -19,7 +19,7 @@
     <title>Home</title>
   </head>
 
-  <body onload="loadData()">
+  <body onload="loadData(populateByDate)">
     <header>
       <nav>
         <h1><span class="yellow">Covid</span>Tracker</h1>
@@ -43,7 +43,7 @@
       <input
         id="submit-button"
         type="button"
-        onclick="loadData()"
+        onclick="loadData(populateByDate)"
         value="Cerca"
       />
     </div>
